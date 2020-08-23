@@ -38,8 +38,15 @@ body {
     }
 }
 
-.carousel img {
-    object-fit: cover;
-    height: 500px;
-    min-width: 100%;
+.carousel {
+    img {
+        object-fit: cover;
+        height: 500px;
+        min-width: 100%;
+    }
+
+    .slider-navigation-next, .slider-navigation-previous {
+        background-color: rgba($color: #000000, $alpha: 0.0);
+    }
 }
+
