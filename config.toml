@@ -1,3 +1,9 @@
-baseURL = "https://www.empiresmod.com/"
+baseURL = "https://hmmdeif.github.io/empiresmod-website/"
 languageCode = "en-us"
 title = "Empires Mod"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
