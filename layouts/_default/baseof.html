@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/darkly/bulmaswatch.min.css" media="screen" />
     {{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
     <title>{{ block "title" . }}
       {{ .Site.Title }}
     {{ end }}</title>
@@ -20,5 +22,7 @@
       <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
       {{ end }}
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

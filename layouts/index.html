@@ -1,22 +1,42 @@
 {{ define "main" }}
-    <main aria-role="main">
-      <header class="homepage-header">
-        <h1>{{.Title}}</h1>
-        {{ with .Params.subtitle }}
-        <span class="subtitle">{{.}}</span>
-        {{ end }}
-      </header>
-      <div class="homepage-content">
-        <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
-        {{.Content}}
-      </div>
-      <div>
-        {{ range first 10 .Site.RegularPages }}
-          <div class="post">
-            <a href="{{.Permalink}}">{{.Title}}</a>
-            {{ .Summary}}
+  <main aria-role="main">
+    <header class="homepage-header">
+      <h1>{{.Title}}</h1>
+      {{ with .Params.subtitle }}
+      <span class="subtitle">{{.}}</span>
+      {{ end }}
+    </header>
+    <section class="section">
+			<div class="container">
+				<div id="carousel" class="carousel">
+					<div class="item-1">
+						<img src="images/slide1.jpg">
+					</div>
+					<div class="item-2">
+						<img src="images/slide2.jpg">
+					</div>
+					<div class="item-3">
+						<img src="images/slide3.jpg">
           </div>
-        {{ end }}
-      </div>
-    </main>
+          <div class="item-4">
+						<img src="images/slide4.jpg">
+          </div>
+          <div class="item-5">
+						<img src="images/slide5.jpg">
+          </div>
+          <div class="item-6">
+						<img src="images/slide7.jpg">
+					</div>
+				</div>
+			</div>
+		</section>
+    <div class="content">
+      {{ range first 10 .Site.RegularPages }}
+        <div class="post-content">
+          <h1><a href="{{.Permalink}}">{{.Title}}</a></h1>
+          {{ .Summary}}
+        </div>
+      {{ end }}
+    </div>
+  </main>
 {{ end }}

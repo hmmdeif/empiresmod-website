@@ -37,3 +37,9 @@ body {
         margin: 20px auto;
     }
 }
+
+.carousel img {
+    object-fit: cover;
+    height: 500px;
+    min-width: 100%;
+}
