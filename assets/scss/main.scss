@@ -38,7 +38,12 @@ body {
     }
 }
 
-.carousel {
+.has-carousel {
+    height: 500px;
+    margin: 40px auto;
+}
+
+.hero-carousel {
     img {
         object-fit: cover;
         height: 500px;

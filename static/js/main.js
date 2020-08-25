@@ -3,7 +3,8 @@ bulmaCarousel.attach('#carousel', {
     slidesToShow: 1,
     loop: true,
     infinite: true,
-    autoplay: true
+    autoplay: true,
+    pauseOnHover: true
 });
 
 document.addEventListener('DOMContentLoaded', () => {

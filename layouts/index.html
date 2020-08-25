@@ -1,8 +1,8 @@
 {{ define "main" }}
   <main aria-role="main">
-    <section class="section">
-			<div class="container">
-				<div id="carousel" class="carousel">
+    <section class="hero is-medium has-carousel">
+			<!-- <div class="container"> -->
+				<div id="carousel" class="hero-carousel">
 					<div class="item-1">
 						<img src="{{ .Site.BaseURL }}/images/slide1.jpg">
 					</div>
@@ -21,8 +21,11 @@
           <div class="item-6">
 						<img src="{{ .Site.BaseURL }}/images/slide7.jpg">
 					</div>
-				</div>
-			</div>
+        </div>
+        <div class="hero-head"></div>
+        <div class="hero-body"></div>
+        <div class="hero-foot"></div>
+			<!-- </div> -->
     </section>
     <section class="content">
       <p>
