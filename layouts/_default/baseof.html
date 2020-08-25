@@ -8,13 +8,15 @@
     {{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
     <title>{{ block "title" . }}
       {{ .Site.Title }}
     {{ end }}</title>
+    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/images/favicon.png" />
   </head>
   <body>
     <div class="container">
+      {{ partial "header.html" . }}
       {{ block "main" . }}
         <!-- The part of the page that begins to differ between templates -->
       {{ end }}
@@ -23,6 +25,6 @@
       {{ end }}
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{ .Site.BaseURL }}/js/main.js"></script>
   </body>
 </html>

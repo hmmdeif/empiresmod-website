@@ -1,6 +1,6 @@
 baseURL = "https://hmmdeif.github.io/empiresmod-website/"
 languageCode = "en-us"
-title = "Empires Mod"
+title = "Empires"
 
 [markup]
   defaultMarkdownHandler = "goldmark"

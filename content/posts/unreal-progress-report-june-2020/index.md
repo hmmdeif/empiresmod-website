@@ -1,6 +1,7 @@
 ---
 title: Empires UE4 Monthly Update - June 2020
 author: RoyAwesome
+date: "2020-07-04"
 ---
 
 ## Project Update - Roy Awesome

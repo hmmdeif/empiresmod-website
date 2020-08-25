@@ -1,6 +1,7 @@
 ---
 title: Empires UE4 Monthly Update - July 2020
 author: RoyAwesome
+date: "2020-08-04"
 ---
 
 ### Project Update - Roy Awesome
@@ -151,7 +152,7 @@ I did manage to crank out one complete tune, something I envision for the beginn
 
 <audio
         controls
-        src="../img/july2020update/OfftoBattle.mp3">
+        src="./OfftoBattle.mp3">
             Your browser does not support the
             <code>audio</code> element.
 </audio>
@@ -163,7 +164,7 @@ Again, this track is NOT FINISHED, far from it in fact. This is also just a smal
 
 <audio
         controls
-        src="../img/july2020update/BraveFirefightDemo.mp3">
+        src="./BraveFirefightDemo.mp3">
             Your browser does not support the
             <code>audio</code> element.
 </audio>

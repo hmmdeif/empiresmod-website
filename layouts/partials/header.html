@@ -1,0 +1,81 @@
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{{ .Site.BaseURL }}">
+        <img src="{{ .Site.BaseURL }}/images/logo.png" />
+      </a>
+  
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="{{ .Site.BaseURL }}">
+          Empires
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable ">
+          <a class="navbar-link">
+            Meet Players
+          </a>
+  
+          <div class="navbar-dropdown is-boxed">
+            <a class="navbar-item" href="https://forums.empiresmod.com/">
+              Chat on the forums
+            </a>
+            <a class="navbar-item" href="https://steamcharts.com/app/17740">
+              Current player count
+            </a>
+            <a class="navbar-item" href="https://steamcommunity.com/app/17740">
+              Steam community hub
+            </a>
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable ">
+            <a class="navbar-link">
+              Learn
+            </a>
+    
+            <div class="navbar-dropdown is-boxed">
+              <span class="navbar-item">TEXT TUTORIALS</span>
+              <a class="navbar-item" href="{{ .Site.BaseURL }}docs/quickstart/quick_start.html">
+                Quick-start guide
+              </a>
+              <a class="navbar-item" href="{{ .Site.BaseURL }}docs/index.htm">
+                Manual
+              </a>
+              <hr class="navbar-divider" />
+              <span class="navbar-item">ADVANCED TOPICS</span>
+              <a class="navbar-item" href="https://wiki.empiresmod.com/Main_Page">
+                Wiki
+              </a>
+              <a class="navbar-item" href="https://wiki.empiresmod.com/Dedicated_Server_Setup">
+                Server setup
+              </a>
+            </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable ">
+            <a class="navbar-link">
+              Developers
+            </a>
+    
+            <div class="navbar-dropdown is-boxed">
+              <a class="navbar-item" href="{{ .Site.BaseURL }}team">
+                Meet the team
+              </a>
+              <!-- <a class="navbar-item" href="{{ .Site.BaseURL }}/join">
+                Join us
+              </a> -->
+              <a class="navbar-item" href="{{ .Site.BaseURL }}posts">
+                Developer blog
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav>

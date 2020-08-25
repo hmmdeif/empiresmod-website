@@ -50,3 +50,14 @@ body {
     }
 }
 
+a {
+    color: hsl(208, 60%, 52%);
+}
+
+.navbar-dropdown {
+    background-color: hsl(208, 60%, 52%);
+}
+
+a:hover, a.navbar-item:hover, a.navbar-link:hover {
+    color: hsl(208, 47%, 66%);
+}

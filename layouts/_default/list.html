@@ -1,9 +1,11 @@
 {{ define "main" }}
-  <h1>Posts</h1>
+<div class="content">
+  <h1>{{ .Title }}</h1>
   {{ range .Pages }}
-    <article>
-      <h2>{{ .Title }}</h2>
-      {{ .Summary }}
-    </article>
+    <div class="post-content">
+      <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
+      {{ .Summary}}
+    </div>
   {{ end }}
+</div>
 {{ end }}
