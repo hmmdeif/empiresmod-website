@@ -5,7 +5,8 @@ date: "2020-07-04"
 post_type: UE4
 ---
 
-## Project Update - Roy Awesome
+# Project Update
+## Roy Awesome
 
 Our second full month is complete working on the Empires UE4 port.  We have made some very appreciable progress toward completing the Minimum Viable milestone, and we will soon be able to check that one off.  
 
@@ -16,7 +17,6 @@ We are always recruiting though, for anyone who has some free time and wants to 
 Finally, let's take a high level view of our roadmap and see where we are.  
 
 **Minimum Viable**
-
 
 
 *   Players can join into a game server and shoot other players.  **DONE**
@@ -30,16 +30,14 @@ This shows us that we simply need to set up grenades and a scoreboard, and we wi
 Anyway, that’s the high level overview for June.   Again, if you can animate 3d models or create awesome levels in Unreal Engine please reach out.  I’d be happy to have you on board and help make this port happen.
 
 
-## Level Design
-
-Sovietshark - 
+# Level Design
+## Sovietshark
 
 For this month, it was rather uneventful for me. Between moving, classes, work, and the little bit of social life I was able to squeeze in, progress did grind to a halt. However, I hope that next month I am able to show off a level I’ve been working on while waiting for some new assets for Coast. This new map, that isn’t a port, will hopefully appeal to quite a few of you as it takes us to a jungle, something previously impossible on the Source Engine. 
 
 
-## Music and Sound
-
-KGBEATS
+# Music and Sound
+## KGBEATS
 
 Hi everyone, I am responsible for music production on this project. My main task the past two months has been to reproduce the existing Empires Soundtrack with better-quality sound libraries, as well as integrate some of my own compositions with original soundtrack themes intertwined.
 
@@ -48,8 +46,6 @@ A bit about my involvement with this game: I have been a part of the empires com
 So far, I have completed 5 tracks for the port, and they are available for listening below. I plan to reproduce most, if not all tracks currently in the source mod, and include additional tracks for scenarios not already accounted for sonically in game. Below is a list of what tracks I have or plan to produce, with their intended purpose in regard to gameplay. Original Soundtrack reproductions are highlighted. Additionally, keep in mind that some of these track’s length will depend on their purpose. With flag capture/lost and class upgrade for example, a simple 3-5 second blip is far more appropriate than a 2 minute track. 
 
 Roadmap: 
-
-
 
 1. Valiance - (Player’s first encounter piloting a vehicle / potentially group of vehicles)
 2. In Distress - (Commander in danger (serious HP damage))
@@ -122,11 +118,8 @@ _In Distress_:
 
 I realize there’s a LOT left to be worked on based on that list, but I am confident in completing it for this port. Unfortunately, my work situation has rapidly deteriorated in the past few weeks due to COVID however, so it will be an ongoing process while I attempt to solidify that and other aspects of my life. 
 
-
-## Programming
-
-
-### Gameplay Programming - Roy Awesome
+# Gameplay Programming
+## Roy Awesome
 
 June’s Gameplay Programming tasks have been primarily centralized around the flow around starting the game, spawning, and dying.
 

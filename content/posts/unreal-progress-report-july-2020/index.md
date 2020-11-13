@@ -5,7 +5,8 @@ date: "2020-08-04"
 post_type: UE4
 ---
 
-### Project Update - Roy Awesome
+# Project Update
+## Roy Awesome
 
 Hey Everyone!  Another month in the bag for UE4 and we’ve really kicked some butt.  We achieved a major milestone this month, we have held **multiple** playtests!  That’s right, we’ve started to be able to play the game and get a general gameplay loop going.  We even found a crash while testing!
 
@@ -24,21 +25,16 @@ However, we still have a ton of work to do.  Getting the game into a state where
 
 That being said, we have quite a bit of awesome progress to show off for July.
 
-
-### General
-
-
-#### Project style guide - f1r3w4rr10r
+# Project Style Guide
+## f1r3w4rr10r
 
 We have started to follow this [style guide](https://github.com/Allar/ue4-style-guide) for how to lay out our content in the Unreal project directory. As most style guides it is very opinionated, but helps keep things consistent. It will make it easier to find things and keep stuff organized in general.
 
 I have been mostly busy with that for the past month, when I was even able to work on Empires at all. My other two articles in this update relate to things that happened already before, I just didn’t have time to write about it until now.
 
 
-### Programming
-
-
-#### Gameplay Programming - Roy Awesome
+# Gameplay Programming
+## Roy Awesome
 
 For gameplay this month, I did a lot of low level things that don’t really translate to good screenshots to show off.  Primarily I was focused on getting the Steam Server Browser working with dedicated servers.  This was a really long and arduous process, where no errors would be reported but the server just didn’t show up on steam.  I updated the Engine’s steamworks version to 1.49, I cleaned up the session code to post the right tags, and configured the dedicated server to make use of the right steam appid.  However, the work was not for naught, as we are now able to run a build on our Jenkins server, it posts automatically to steam, and then we just update our games and play.  The process is quick and easy now, and won't need to be changed for the future.  It’s important to have good infrastructure, but it doesn’t lead to interesting updates.
 
@@ -48,11 +44,8 @@ Outside of that, I got a Scoreboard working.  I’m experimenting with the desig
 
 I also hooked up animations to gameplay abilities, meaning events such as firing, reloading, and the like animate now!  I’m using some placeholder animations, so they look pretty bad.  I’ve set it all up now so that artists and animators can add in new animations without any code support needed at all, a feature that will surely benefit long term development of this port.
 
-
-### Art
-
-
-#### Player Mesh reskinning - f1r3w4rr10r
+# Player Mesh Reskinning
+## f1r3w4rr10r
 
 Hi there, you might remember that, some updates ago, PYA had a go at porting the old player meshes using animation retargeting. (Essentially mapping bones from one skeleton to another, to be able to play the same animations on both of them.) This gave us some mixed results, especially around the twist bones, on the wrists for example.
 
@@ -69,7 +62,7 @@ But in the end, I managed to get a quite decent looking skin of the BE soldier i
 </div>
 
 
-#### 3D Software interoperability - f1r3w4rr10r
+# 3D Software interoperability
 
 So how did I even get a proper skeleton into Blender? The short answer: I didn’t. \
 You can export assets out of the Unreal editor. Most kinds of 3D data will be exported as FBX file format. Blender does have an FBX exporter/importer, but since the FBX library is proprietary Autodesk software, the guys who make Blender had to reverse engineer the file format to make this importer/exporter work. Add to that, that the file format is binary and that Autodesk likes to change arbitrary things in it from version to version, just to thwart such reverse engineering attempts.
@@ -92,11 +85,8 @@ This saves me a ton of work. Not only because it provides me with a proper skele
 
 This now allows me to test my skinned meshes in Blender, but also an easy way to create new animations and export them into the engine.
 
-
-### Level Design
-
-
-#### Glycencity Remaster - thomasfn
+# Glycencity Remaster
+## thomasfn
 
 I’ve been working on porting/remastering glycencity from sourcepires. I like the idea and aesthetic of a snowed-in city/town. There are also interesting potential gameplay implications to explore later down the line, like dense snowfall that limits visibility, flashlights / headlights illuminating snowfall and giving away positions etc. For now I will be remaining faithful to the original, in the spirit of the unrealpires project.
 
@@ -145,7 +135,8 @@ The next step is to block out the buildings and other objects important to gamep
 Here you can see the first blockout pass complete. There’s still at least a few buildings I’ve forgotten to hollow out, and there are no doubt issues with scaling and not being able to fit through doors or things feeling too big/small, but at least we now have a non-imported reference point to work on. The next steps for me will be to move towards a playable demo, which will include setting up all of the spawn points, flags etc and adding blocking volumes to prevent the player escaping.
 
 
-### Sound and Music
+# Sound and Music
+## KGBEATS
 
 Hey all! Bit of a quieter month on the music front...constant changes to my work situation with COVID have kept me pretty busy to say the least. 
 
@@ -172,7 +163,8 @@ Again, this track is NOT FINISHED, far from it in fact. This is also just a smal
 
 
 
-### Website hugo port - Tama “Bob2” McGlinn
+# Website Port
+## Tama “Bob2” McGlinn
 
 As a parting gift to the newly formed Unreal team, I’ve been porting the empiresmod website from the hakyll setup we have been using to Hugo. The main advantage is that hugo has a lot more support - it is really easy to set up on a new machine, so there probably won’t be any trouble getting a Continuous Integration server running, so that Pull Requests can come with a preview and approving the PR on github will be all that is necessary for the team to push changes to the website. The old setup had a CI but it broke, and hakyll being such a complicated setup - we haven’t been able to fix it. So for almost a year now, my machine has been the only one able to build the website and push changes. \
  \

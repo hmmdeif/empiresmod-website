@@ -17,12 +17,14 @@
   <body>
     <div class="wrapper">
       {{ partial "header.html" . }}
-      {{ block "main" . }}
-        <!-- The part of the page that begins to differ between templates -->
-      {{ end }}
-      {{ block "footer" . }}
-      <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
-      {{ end }}
+      <div class="main">
+        <div class="grow-content">
+          {{ block "main" . }}
+            <!-- The part of the page that begins to differ between templates -->
+          {{ end }}
+        </div>
+        {{ partial "footer.html" . }}
+      </div>
     </div>
     <script src="{{ .Site.BaseURL }}/js/main.js"></script>
   </body>

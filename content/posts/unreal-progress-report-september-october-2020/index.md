@@ -6,7 +6,8 @@ post_type: UE4
 ---
 
 
-### Project Update - Roy Awesome
+# Project Update
+## Roy Awesome
 
 Hey everyone! Combined update for September and October this month.  Due to the nature of the all-volunteer team and a number of us having day jobs, we ran into some issues getting an update out last month.  However, progress continues and we’ve had a lot of discussion for the post 1.0 future of this project.  
 
@@ -17,10 +18,8 @@ Also, we are discussing what direction this project is going to go after we’ve
 As always, we are looking for help.  Right now, the biggest help would be an animator who knows their way around the Unreal Engine animation blueprint system.  We are heavily constrained by that at the moment, and if anyone knows someone, send them our way :)
 
 
-## Art
-
-
-#### Weapon Design - Mayama
+# Weapon Design
+## Mayama
 
 I managed to make low poly models for all primary and secondary NF infantry weapons. The pictures posted here are not final but should give you a good idea in which direction the art style is going. I also started to make NF infantry models but I don't have anything presentable right now.
 
@@ -50,10 +49,8 @@ The team favourite is currently a mix between the bright red and the muted brown
 {{< image-resize NF_SMG_final_color_test.jpg >}}
 
 
-## Programming
-
-
-#### Gameplay Programming - Roy Awesome
+# Gameplay Programming
+## Roy Awesome
 
 This month I worked on Crouching and Squads.  Crouching was a fairly simple addition, given that everything was mostly set up for it already in the engine.  I simply hooked up a gameplay ability for it, and it worked.  I also investigated ‘Crouch Sliding’, or going into a short slide if you are sprinting and then crouch.  Almost every modern shooter today has this mechanic, and I think it would be very good for Empires.  I plan on making it a toggle, so that if players don’t like it they can turn it off.  
 

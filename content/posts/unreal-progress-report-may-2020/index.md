@@ -11,8 +11,6 @@ For this port project, We have a variety of old developers from back in Empires�
 
 The Team (in no particular order):
 
-
-
 *   **Kylegar/RoyAwesome** (that’s me!) - Project Lead, Programming
 *   **f1r3w4rr10r** - Art Lead
 *   **Beerdude26** - Programming co-lead
@@ -31,10 +29,8 @@ As I’ve said, we are all incredibly excited to be working on this project, and
 If you or someone you would be interested in helping out with this project, Feel free to ping me in the Empires Discord (RoyAwesome#1989)!
 
 
-## High Level Design Goals
-
-
-### **RoyAwesome**: Team Organization and Development Path
+# High Level Design Goals
+## Roy Awesome
 
 I want to take a quick opportunity to discuss where we are actually going with this project.  I have been involved in multiple Empires remakes, ports, and attempts to capture this style of gameplay on different engines since leading the mod team back in 2008, and they have all mostly failed due to a lack of coherent direction.  So, as I set out to put this project together and get the team on board, I set out with a really simple goal… We aren’t making a new game, we are porting Empires as it is on the Source engine to Unreal Engine.  All of those ideas that everyone has can wait until we have the game working, playable, and fun on Unreal Engine.  By setting this goal early, we don’t have to worry about creating new designs that may not be fun or we don’t know if it’ll work.  We can avoid a lot of the “it’s new!” shock that tends to drive people away, and most importantly, it gives us a foundation to move forward from for the next 15+ years.  
 
@@ -99,10 +95,8 @@ I hope that gives you an idea of where we are going with this project.  I can’
 P.S. Yes, we will probably upgrade to UE5 when it comes out.  That’s more than a year out now though, so we hope to have the game working on UE4 and in your hands before we have to do that work.  
 
 
-## Art Updates
-
-
-### **f1r3w4rr10r**: Art Organization, Style and Pipelines
+# Art Organization, Style and Pipelines
+## f1r3w4rr10r
 
 Hi, as you read above, I am currently responsible for the art team. That does not necessarily mean I will always be the one who says what goes or not, but more that I am the one doing some organizational stuff and getting everyone in the team on the same page. And in some cases if we can’t find a consensus on a problem, it will be my job to make a final decision. With that out of the way, let me tell you what I have been working on.
 
@@ -131,7 +125,8 @@ Here I have a reimagining of probably the most well known material of the game.
 
 {{< image-resize image21.png >}}
 
-### **PYA**: Rigging Player models
+# Rigging Player models
+## PYA
 
 One of the first tasks we need to complete for porting over the game is to replicate the current player models. Unfortunately, despite having the original models, we actually can’t use any of the animations and by extension, the rigging work because they were rigged to the Source Engine standard humanoid skeleton.  
  
@@ -154,7 +149,8 @@ So instead, we decided to make a custom skeleton for this iteration and do a pro
 Currently still a work in progress to fix the hands; hopefully we’re able to do that and once we have we can use every animation that the Mannequin has which means we don’t have to do any animation work.
 
 
-### **Yes**: Artsy stuff
+# Art
+## Yes
 
 After being shoved into the #ArtistCorner on Discord, I started working on some ideas for new resource nodes so it’s not just yet-another-stone-with-smoke.
 
@@ -176,10 +172,8 @@ Finally I also started working on a new deployable ammo-crate for Northern Facti
 Ultimately, though this is going to be a longer process, I would like to get all empires assets to a more visually appealing and more detailed state, while - at least for the biggest part - keeping true to empires’ original design (I know the ammobox isn’t exactly the best example, but srsly the old one is just fugly as hell)
 
 
-## Code Updates
-
-
-### **RoyAwesome**: Abilities, Damage, Teams, and Gameplay Programming
+# Abilities, Damage, Teams, and Gameplay Programming
+## Roy Awesome
 
 So, aside from organizing the team, I’m also back to writing code for Empires!  As the most senior UE developer on the team, I’ve been spending most of my time assisting and training other members of the team, but when I’ve had time, I also have been building out some key systems.  
 
@@ -228,8 +222,8 @@ _Configuring the Item Slot layout on the player_
 
 I hope this excites you all at the possibilities unleashed with this port of Empires to UE4.  As I said above, the biggest goal is to make the code expandable and easy to modify, so that we aren’t locked into a hard coded design forever.  I hope that Empires is worked on for another 15 years, and that the developers working on this game that far in the future are able to execute on their goals and vision for a better and more fun Empires.
 
-
-### **Beerdude26**: UI Updates
+# UI
+## Beerdude26
 
 We’re also lovingly recreating the original UI, which is being worked on by Empires’ most lovable rascal, Beerdude26. We already have rudimentary versions of the Message Of The Day and Team Selection menus going (including the MOTD browser!):
 
@@ -244,10 +238,8 @@ The goal is to get all the UI screens for infantry in and then have them look li
 As work continues on weapons and weapon damage, we’ll also start work on recreating the player HUD. Nothing exciting here yet. We put a number on the bottom right side that shows your ammo count, I guess :D
 
 
-## Levels Updates
-
-
-### **Sovietshark** : Coast Remastered
+# Coast Remastered
+## Sovietshark
 
 For level design, we came to the conclusion that we should port some of the maps in Sourcepires to Unrealpires. Terminator selected Canyon, so I picked Coast which would normally be a map I would avoid due to the dreaded displacements… However, in Unreal, displacements aren’t a thing and you can freely paint terrain which is _freaking awesome _as you no longer have to push each and every vertex to get a mountain. In fact, as you can see in the image below, you can make a heightmap using various grays and then import that to get the basics of the terrain layout. 
 
@@ -281,7 +273,8 @@ There’s some more for right now that I don’t want to share about coast, but 
 That’s all for now for Coast. Hopefully next month I’ll have a new map that isn’t just a remaster to show!
 
 
-### **Terminator** : Canyon Remastered
+# Canyon Remastered
+## Terminator
 
 As aforementioned, Soviet chose to remaster emp_coast while I’ve selected emp_canyon for a first attempt.
 
@@ -300,7 +293,7 @@ Accordingly, additional meshes (props) will be required to recreate these featur
 Update: There is a new experimental real time mesh editing tool in the client with UE 4.25, which may allow us to better recreate these types of features going forward. With any luck, the tool will become fully supported in future engine updates.
 
 
-## Conclusion
+# Conclusion
 
 I hope this gets you all excited for the future of Empires on Unreal Engine.  We have a lot more stuff in the works than what we showed off this month (including a remake of multiple music tracks).  Hopefully we’ll have something playable soon to share with everyone.  In the meantime, we’ll keep trying to do these updates every month, although I doubt they’ll be as full as this one.  Finally, I want everyone to keep in mind, this is a spare time, nights and weekends type project for the developers.  This may lead to things moving a bit slower than anticipated, but we will all try our best to complete this port and keep empires alive for years to come.
 

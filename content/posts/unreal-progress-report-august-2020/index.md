@@ -5,7 +5,8 @@ date: "2020-09-12"
 post_type: UE4
 ---
 
-### Project Update - Roy Awesome
+# Project Update
+## Roy Awesome
 
 Hey Everyone
 
@@ -45,7 +46,8 @@ Now, some of you may think that because it took us about 3 months to build out t
 _Editor’s Note: Apologies for the late posting of this update.  Due to the nature of this being a volunteer project, posting this update was delayed due to a major work deadline, and then my state literally caught fire._
 
 
-## Sound and Music
+# Sound and Music
+## KBBEATS
 
 Hi all - KGBEATS here.
 
@@ -53,11 +55,8 @@ I unfortunately did not get a chance to make progress on the music front this mo
 
 The entire team is working INSANELY hard to deliver a great product, however. You should check out and give praise for their contributions, they are most deserving! 
 
-
-## Programming
-
-
-### Gameplay Programming update - RoyAwesome
+# Gameplay Programming 
+## RoyAwesome
 
 August was extremely productive!  We basically have a game now, just need to add features.
 
@@ -86,7 +85,7 @@ While I was testing different things out, I noticed how hard it was to tell if y
   Your browser does not support the video tag.
 </video> 
 
-_Damage Notifications.  The main screen shows the person taking damage and the smaller one shows the X when dealing damage. _
+_Damage Notifications.  The main screen shows the person taking damage and the smaller one shows the X when dealing damage._
 
 Finally, I constructed a generic Recoil system.  While Source-Empires doesn’t have recoil for many guns, HMGs have extremely high recoil when standing, forcing users to crouch or prone when using them.  However, as most games these days do have recoil for every gun, I wanted to create a generic recoil system that can do both the extremely high HMG recoil or subtle, controllable recoil that modern shooters have.  So, to that end, I created a concept of a “Recoil Animation”, which is a scriptable recoil object that is added to the player when a recoil event happens.  It blends in and out, and moves the player’s control rotation to simulate recoil movement.  Each recoil animation can take a payload of data from the recoil event generator, allowing us to script a number of stats that control things like recoil direction, intensity, and how it recovers.  While recoil recovery currently isn’t created (ie, without compensating for recoil it returns to the center), I plan on creating a recoil model that does do recovery, but if you move your mouse to compensate for recoil, it will stop.  
 
@@ -106,15 +105,13 @@ _Snapshot of scriptable recoil.  By using simple blueprint code, we can do all s
 While this system will be certainly used for HMGs, I would be interested to hear what people think about adding recoil to every gun.  Are there current shooters you think do recoil well?  Could recoil help balance Snipers and Rifles?  Hop on the Empires discord and feel free to discuss!  There are a lot of opinions on this topic, and since we now have a scriptable recoil system there are a lot of directions we can go with it.  
 
 
-### Grenades - Megafunk
+# Grenades
+## Megafunk
 
 Hello, I’m Megafunk and I am new to Empires. I joined this project to improve my UE4 skills and I am currently focussing on grenades. So far I have implemented simple grenades that are thrown and deal damage. 
 
-
-## Art
-
-
-### NF Soldier reskin - f1r3w4rr10r
+# NF Soldier Reskin
+## f1r3w4rr10r
 
 After reskinning the BE soldier I also went along and skinned the NF soldier as well.
 
@@ -128,7 +125,8 @@ _A NF soldier in a crouch walk animation loop_
 This gives us at least two distinguishable characters for now to do some more testing with.
 
 
-### NF Concept Art - Mayama
+# NF Concept Art
+## Mayama
 
 Hi I’m Mayama, if you have been playing Empires for a long time you might remember my name. I recently joined the team and my main focus is getting a consistent design and visual style going for the empires factions. Right now i'm doing some concept Art for NF infantry weapons because it's an easy place to start getting a feel for the style. After all weapons in a fps shooter are an extension of the player into the game world and need more attention than the rest of the art.Keep in mind that all pictures shown here are work in progress and will most likely not resemble anything that you will see in the finished game.
 

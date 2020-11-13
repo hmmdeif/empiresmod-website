@@ -5,7 +5,6 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     height: 100%;
-    padding-bottom: 40px;
 }
 
 .navbar {
@@ -32,10 +31,14 @@ body {
     }
 
     .subtitle {
-        color: #bbb;
+        color: hsl(240, 10%, 75%);
         padding-top: 20px;
         margin-bottom: 20px !important;
     }
+}
+
+.wrapper {
+    min-height: 100vh;
 }
 
 .wrapper::before {
@@ -104,6 +107,11 @@ body {
 .post-date {
     margin-top: 10px;
     font-size: 90%;
+    color: hsl(240, 10%, 75%);
+}
+
+.latest-news-title {
+    margin-bottom: 20px !important;
 }
 
 @media screen and (min-width: 1024px) {
@@ -142,14 +150,28 @@ body {
 
 .post-content {
     padding-top: 60px;
+    padding-bottom: 60px;
 
-    h1, h2, h3, h4, h5, h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-child), h5:not(:first-child) {
-        margin-top: 80px;
-        margin-bottom: 40px; 
+    h1 {
+        margin-top: 60px;
+        color: hsl(208, 60%, 52%);
+    }
+
+    h2 {
+        font-size: 120%;
+        color: hsl(208, 60%, 52%);
+        font-weight: normal;
     }
 
     p {
         margin: 20px auto;
+        color: hsl(240, 10%, 75%);
+    }
+
+    .post-snippet {
+        h2 {
+            font-size: 1.75em;
+        }
     }
 }
 
@@ -163,4 +185,42 @@ a {
 
 a:hover, a.navbar-item:hover, a.navbar-link:hover {
     color: hsl(208, 47%, 66%);
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .grow-content {
+        flex-grow: 1;
+    }
+}
+
+.footer {
+    .copyright, .heading {
+        color: hsl(240, 10%, 75%);
+    }
+
+    .copyright div {
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        margin-bottom: -5px;
+        margin-right: 10px;
+    }
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: hsl(240, 10%, 75%);
+        }
+    }
+
+    .item, .heading {
+        margin-bottom: 10px;
+    }
 }
