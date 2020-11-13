@@ -2,9 +2,9 @@ name: Send a Tweet
 
 on:
   push:
-    branches: [ tweet ]
+    branches: [ master ]
   pull_request:
-    branches: [ tweet ]
+    branches: [ master ]
 
 jobs:
   tweet:
@@ -12,16 +12,24 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - id: log
-        run: echo "::set-env name=POST_COMMIT_MESSAGE::$(git log --no-merges -1 --pretty=%B)"
         run: |
-          unset HAS_SECRET
-          if [${{ env.POST_COMMIT_MESSAGE}} == *"Tweet"*]; then HAS_SECRET='true' ; fi
-          echo "::set-env name=HAS_SECRET::${HAS_SECRET}
+          POST_COMMIT_MESSAGE=$(git log --no-merges -1 --pretty=%B)
+          echo ::set-output name=POST_COMMIT_MESSAGE::$POST_COMMIT_MESSAGE
+          if [[ $POST_COMMIT_MESSAGE == *"Tweet: "* ]]; then HAS_TWEET=true ; fi
+          echo ::set-output name=HAS_TWEET::$HAS_TWEET
         
+      - id: parse
+        if: steps.log.outputs.HAS_TWEET
+        run: |
+          searchString="Tweet: "
+          POST_COMMIT_MESSAGE="${{ steps.log.outputs.POST_COMMIT_MESSAGE }}"
+          tweet=${POST_COMMIT_MESSAGE#*$searchString}
+          echo ::set-output name=TWEET::$tweet
+
       - uses: ethomson/send-tweet-action@v1
-        if: ${{ env.HAS_SECRET }}
+        if: steps.log.outputs.HAS_TWEET
         with:
-          status: "${{ env.POST_COMMIT_MESSAGE }}"
+          status: "${{ steps.parse.outputs.TWEET }}"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
           access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
