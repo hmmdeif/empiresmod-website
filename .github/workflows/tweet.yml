@@ -19,17 +19,17 @@ jobs:
           echo ::set-output name=HAS_TWEET::$HAS_TWEET
         
       - id: parse
-        if: steps.vars.outputs.HAS_TWEET
+        if: steps.log.outputs.HAS_TWEET
         run: |
           searchString="Tweet: "
-          POST_COMMIT_MESSAGE=${{ steps.vars.outputs.POST_COMMIT_MESSAGE }}
+          POST_COMMIT_MESSAGE=${{ steps.log.outputs.POST_COMMIT_MESSAGE }}
           tweet=${POST_COMMIT_MESSAGE#*$searchString}
           echo ::set-output name=TWEET::$tweet
 
       - uses: ethomson/send-tweet-action@v1
-        if: steps.vars.outputs.HAS_TWEET
+        if: steps.log.outputs.HAS_TWEET
         with:
-          status: "${{ steps.vars.outputs.TWEET }}"
+          status: "${{ steps.parse.outputs.TWEET }}"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
           access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
