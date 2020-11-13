@@ -14,14 +14,18 @@ jobs:
       - id: log
         run: echo "::set-env name=POST_COMMIT_MESSAGE::$(git log --no-merges -1 --pretty=%B)"
         run: |
-          unset HAS_SECRET
-          if [${{ env.POST_COMMIT_MESSAGE}} == *"Tweet"*]; then HAS_SECRET='true' ; fi
-          echo "::set-env name=HAS_SECRET::${HAS_SECRET}
+          unset HAS_TWEET
+          if [${{ env.POST_COMMIT_MESSAGE}} == *"Tweet: "*]; then HAS_TWEET='true' ; fi
+          echo "::set-env name=HAS_TWEET::${HAS_TWEET}"
         
       - uses: ethomson/send-tweet-action@v1
-        if: ${{ env.HAS_SECRET }}
+        if: ${{ env.HAS_TWEET }}
+        run: |
+          searchString="Tweet: "
+          tweet=${${{ env.POST_COMMIT_MESSAGE }}#*$searchString}
+          echo "::set-env name="TWEET::${tweet}""
         with:
-          status: "${{ env.POST_COMMIT_MESSAGE }}"
+          status: "${{ env.tweet }}"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
           access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
