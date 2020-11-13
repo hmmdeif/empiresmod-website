@@ -18,12 +18,15 @@ jobs:
           if [${{ env.POST_COMMIT_MESSAGE}} == *"Tweet: "*]; then HAS_TWEET='true' ; fi
           echo "::set-env name=HAS_TWEET::${HAS_TWEET}"
         
-      - uses: ethomson/send-tweet-action@v1
+      - id: parse
         if: ${{ env.HAS_TWEET }}
         run: |
           searchString="Tweet: "
           tweet=${${{ env.POST_COMMIT_MESSAGE }}#*$searchString}
-          echo "::set-env name="TWEET::${tweet}""
+          echo "::set-env name=TWEET::${tweet}"
+
+      - uses: ethomson/send-tweet-action@v1
+        if: ${{ env.HAS_TWEET }}
         with:
           status: "${{ env.tweet }}"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
