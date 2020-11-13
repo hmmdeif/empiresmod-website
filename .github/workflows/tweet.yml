@@ -19,7 +19,7 @@ jobs:
           echo "HAS_TWEET=$HAS_TWEET" >> $GITHUB_ENV
         
       - id: parse
-        if: $HAS_TWEET
+        if: HAS_TWEET
         run: |
           searchString="Tweet: "
           tweet=${POST_COMMIT_MESSAGE#*$searchString}
