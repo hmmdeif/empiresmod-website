@@ -18,6 +18,6 @@ When using images use the shortcode `{{< image-resize YOUR-IMAGE.EXT >}}` so tha
 
 The site automatically regenerates itself using github actions when a push or merge happens on `master`.
 
-### Autoated Tweeting
+### Automated Tweeting
 
 A tweet will be automatically sent out if the last git commit message to the master branch has `Tweet: ` anywhere in the message. Anything after that search expression will be posted as a tweet. Include the url if you are linking a blog post (it will be `https://www.empiresmod.com/posts/<name of folder that contains post>`)
