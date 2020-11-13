@@ -1,7 +1,8 @@
 ---
-title: Empires UE4 Monthly Update - May 2020
+title: Unreal Port - The Intro
 author: RoyAwesome
 date: "2020-05-31"
+post_type: UE4
 ---
 
 Hello Everyone!  I am incredibly excited to announce that we are porting Empires to the Unreal Engine!  This project has been going on for the better part of the month, and we are making extremely good progress.  We have brought together a great team and while we are only working nights and weekends on this project, I hope that you can all see how fast we are progressing and how exciting it is for Empires to have a future on a game engine that lets the game excel. 

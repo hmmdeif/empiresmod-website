@@ -1,51 +1,35 @@
 {{ define "main" }}
-  <main aria-role="main">
-    <section class="hero is-medium has-carousel">
-			<!-- <div class="container"> -->
-				<div id="carousel" class="hero-carousel">
-					<div class="item-1">
-						<img src="{{ .Site.BaseURL }}/images/slide1.jpg">
-					</div>
-					<div class="item-2">
-						<img src="{{ .Site.BaseURL }}/images/slide2.jpg">
-					</div>
-					<div class="item-3">
-						<img src="{{ .Site.BaseURL }}/images/slide3.jpg">
+  <section class="hero">
+    <div class="hero-body ue4-teaser">
+      <div class="container">
+        <div class="content">
+          <h1 class="title">Empires</h1>
+          <h2 class="subtitle">
+            The free, award-winning Half-Life 2 mod
+          </h2>
+          <div class="steam-link">
+            <a class="button is-primary" href="https://store.steampowered.com/app/17740/"><b>&nbsp;Free&nbsp;</b> on Steam <img class="icon" src="{{ .Site.BaseURL }}/images/steam.png" /></a>
           </div>
-          <div class="item-4">
-						<img src="{{ .Site.BaseURL }}/images/slide4.jpg">
-          </div>
-          <div class="item-5">
-						<img src="{{ .Site.BaseURL }}/images/slide5.jpg">
-          </div>
-          <div class="item-6">
-						<img src="{{ .Site.BaseURL }}/images/slide7.jpg">
-					</div>
         </div>
-        <div class="hero-head"></div>
-        <div class="hero-body"></div>
-        <div class="hero-foot"></div>
-			<!-- </div> -->
-    </section>
-    <section class="content">
-      <p>
-        Empires, the free, award-winning Half-Life 2 mod, combines the best of the first person shooter and real-time strategy genres. Fight as either the Northern Faction, remnants of the fallen nation of Jekotia, or as the imperial Brenodi Empire.
-      </p>
-      <p>
-        Choose your commander wisely and fight with up to 64 players for resources to power your army and fund your research into ever more deadly weapons, abilities and vehicles.
-      </p>
-      <p>
-        <a class="button" href="https://store.steampowered.com/app/17740/">Available now for <b>&nbsp;free&nbsp;</b> on Steam</a>
-      </p>
-    </section>
-    <div class="content">
-      <h2>Latest Updates:</h2>
-      {{ range first 10 .Site.RegularPages }}
-        <div class="post-content">
-          <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
-          {{ .Summary}}
-        </div>
-      {{ end }}
+      </div>
     </div>
-  </main>
+  </section>
+  <div class="container">
+    <div class="content">
+      <h2><img class="icon latest-news" src="{{ .Site.BaseURL }}/images/comment-text.png" />Latest Updates</h2>
+      <div class="post-snippets">
+        {{ range first 3 .Site.RegularPages }}
+          <div class="post-snippet">
+            <h2><a href="{{.Permalink}}">{{.Title}}</a></h2>
+            <div>
+              <span class="tag">{{ .Params.post_type }}</span>
+            </div>
+            <div class="post-date">
+              <img class="icon date" src="{{ .Site.BaseURL }}/images/calendar-month.png" />{{.Date.Format "Monday, 2 January 2006"}}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
 {{ end }}

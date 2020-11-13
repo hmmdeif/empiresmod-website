@@ -1,7 +1,8 @@
 ---
-title: Empires UE4 Monthly Update - June 2020
+title: Music and Damage Progress
 author: RoyAwesome
 date: "2020-07-04"
+post_type: UE4
 ---
 
 ## Project Update - Roy Awesome

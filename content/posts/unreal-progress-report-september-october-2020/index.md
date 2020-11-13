@@ -1,7 +1,8 @@
 ---
-title: Empires UE4 September/October 2020 Update
+title: Squads and Weapons Progress
 author: RoyAwesome
 date: "2020-11-05"
+post_type: UE4
 ---
 
 

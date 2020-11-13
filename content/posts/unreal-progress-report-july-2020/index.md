@@ -1,7 +1,8 @@
 ---
-title: Empires UE4 Monthly Update - July 2020
+title: Glycen City and Players
 author: RoyAwesome
 date: "2020-08-04"
+post_type: UE4
 ---
 
 ### Project Update - Roy Awesome

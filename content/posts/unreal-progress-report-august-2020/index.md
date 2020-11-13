@@ -1,7 +1,8 @@
 ---
-title: Empires UE4 Monthly Update - August 2020
+title: Chat, Recoil, and Weapons
 author: RoyAwesome
 date: "2020-09-12"
+post_type: UE4
 ---
 
 ### Project Update - Roy Awesome

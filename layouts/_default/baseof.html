@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" /> 
     <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/darkly/bulmaswatch.min.css" media="screen" />
-    {{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
+    {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
@@ -15,7 +15,7 @@
     <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/images/favicon.png" />
   </head>
   <body>
-    <div class="container">
+    <div class="wrapper">
       {{ partial "header.html" . }}
       {{ block "main" . }}
         <!-- The part of the page that begins to differ between templates -->
@@ -24,7 +24,6 @@
       <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
       {{ end }}
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
     <script src="{{ .Site.BaseURL }}/js/main.js"></script>
   </body>
 </html>

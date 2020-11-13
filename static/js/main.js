@@ -1,12 +1,3 @@
-bulmaCarousel.attach('#carousel', {
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    loop: true,
-    infinite: true,
-    autoplay: true,
-    pauseOnHover: true
-});
-
 document.addEventListener('DOMContentLoaded', () => {
 
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0)
@@ -21,4 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         })
     }
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            const $target = document.getElementById('navbar')
+            $target.classList.remove("offset-top")
+        } else {
+            const $target = document.getElementById('navbar')
+            $target.classList.add("offset-top")
+        }
+    });
 })
