@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - id: log
-        run: echo "::set-env name=POST_COMMIT_MESSAGE::$(git log --no-merges -1 --pretty=%B)"
         run: |
+          echo "::set-env name=POST_COMMIT_MESSAGE::$(git log --no-merges -1 --pretty=%B)"
           unset HAS_TWEET
           if [${{ env.POST_COMMIT_MESSAGE}} == *"Tweet: "*]; then HAS_TWEET='true' ; fi
           echo "::set-env name=HAS_TWEET::${HAS_TWEET}"
