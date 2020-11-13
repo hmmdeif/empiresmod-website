@@ -1,0 +1,28 @@
+name: Send a Tweet
+
+on:
+  push:
+    branches: [ tweet ]
+  pull_request:
+    branches: [ tweet ]
+
+jobs:
+  tweet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - id: log
+        run: echo "::set-env name=POST_COMMIT_MESSAGE::$(git log --no-merges -1 --pretty=%B)"
+        run: |
+          unset HAS_SECRET
+          if [${{ env.POST_COMMIT_MESSAGE}} == *"Tweet"*]; then HAS_SECRET='true' ; fi
+          echo "::set-env name=HAS_SECRET::${HAS_SECRET}
+        
+      - uses: ethomson/send-tweet-action@v1
+        if: ${{ env.HAS_SECRET }}
+        with:
+          status: "${{ env.POST_COMMIT_MESSAGE }}"
+          consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
+          consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
+          access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
