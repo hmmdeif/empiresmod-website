@@ -13,22 +13,22 @@ jobs:
       - uses: actions/checkout@v1
       - id: log
         run: |
-          echo "::set-env name=POST_COMMIT_MESSAGE::$(git log --no-merges -1 --pretty=%B)"
-          unset HAS_TWEET
-          if [${{ env.POST_COMMIT_MESSAGE}} == *"Tweet: "*]; then HAS_TWEET='true' ; fi
-          echo "::set-env name=HAS_TWEET::${HAS_TWEET}"
+          POST_COMMIT_MESSAGE=$(git log --no-merges -1 --pretty=%B)
+          echo "$POST_COMMIT_MESSAGE" >> $GITHUB_ENV
+          if [$POST_COMMIT_MESSAGE == *"Tweet: "*]; then HAS_TWEET='true' ; fi
+          echo "$HAS_TWEET" >> $GITHUB_ENV
         
       - id: parse
-        if: ${{ env.HAS_TWEET }}
+        if: $HAS_TWEET
         run: |
           searchString="Tweet: "
-          tweet=${${{ env.POST_COMMIT_MESSAGE }}#*$searchString}
-          echo "::set-env name=TWEET::${tweet}"
+          tweet=${POST_COMMIT_MESSAGE#*$searchString}
+          echo "TWEET=$tweet" >> $GITHUB_ENV
 
       - uses: ethomson/send-tweet-action@v1
-        if: ${{ env.HAS_TWEET }}
+        if: $HAS_TWEET
         with:
-          status: "${{ env.tweet }}"
+          status: "$TWEET"
           consumer-key: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
           consumer-secret: ${{ secrets.TWITTER_CONSUMER_API_SECRET }}
           access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
