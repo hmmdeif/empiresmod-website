@@ -22,7 +22,7 @@ jobs:
         if: steps.log.outputs.HAS_TWEET
         run: |
           searchString="Tweet: "
-          POST_COMMIT_MESSAGE=${{ steps.log.outputs.POST_COMMIT_MESSAGE }}
+          POST_COMMIT_MESSAGE="${{ steps.log.outputs.POST_COMMIT_MESSAGE }}"
           tweet=${POST_COMMIT_MESSAGE#*$searchString}
           echo ::set-output name=TWEET::$tweet
 
