@@ -15,7 +15,7 @@ jobs:
         run: |
           POST_COMMIT_MESSAGE=$(git log --no-merges -1 --pretty=%B)
           echo ::set-output name=POST_COMMIT_MESSAGE::$POST_COMMIT_MESSAGE
-          if [ $POST_COMMIT_MESSAGE == *"Tweet: "* ]; then HAS_TWEET='true' ; fi
+          if [[ $POST_COMMIT_MESSAGE == *"Tweet: "* ]]; then HAS_TWEET='true' ; fi
           echo ::set-output name=HAS_TWEET=$HAS_TWEET
         
       - id: parse
