@@ -3,6 +3,7 @@ title: Chat, Recoil, and Weapons
 author: RoyAwesome
 date: "2020-09-12"
 post_type: UE4
+aliases: "/posts/2020-09-12-unreal-progress-report-august-2020.html"
 ---
 
 # Project Update

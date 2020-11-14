@@ -6,6 +6,7 @@
   <div class="content">
     <section class="post-content">
       <h1>{{ .Title }}</h1>
+      {{ partial "availableTranslations.html" . }}
       {{ .Content }}
     </section>
   </div>

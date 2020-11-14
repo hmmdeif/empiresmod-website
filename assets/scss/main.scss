@@ -241,3 +241,7 @@ a:hover, a.navbar-item:hover, a.navbar-link:hover {
     min-height: 400px;
     margin-bottom: 60px;
 }
+
+.translation-link:not(:last-of-type):after {
+    content: " / "
+}

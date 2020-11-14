@@ -11,8 +11,10 @@ title = "Empires"
 [languages]
   [languages.en]
     title = "Empires"
+    languageName = "English"
     weight = 1
   
   [languages.ru]
     title = "Empires"
+    languageName = "русский"
     weight = 2

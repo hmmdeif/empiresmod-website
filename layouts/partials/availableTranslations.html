@@ -1,0 +1,6 @@
+{{ if gt .Page.AllTranslations 1 }}
+Available in 
+    {{ range .Page.AllTranslations }}
+        <a class="translation-link" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+    {{ end }}
+{{ end }}

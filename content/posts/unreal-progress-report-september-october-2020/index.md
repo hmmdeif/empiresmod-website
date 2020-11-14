@@ -3,6 +3,7 @@ title: Squads and Weapons Progress
 author: RoyAwesome
 date: "2020-11-05"
 post_type: UE4
+aliases: "/posts/2020-11-05-progress-report-empires-ue4-october-2020.html"
 ---
 
 
