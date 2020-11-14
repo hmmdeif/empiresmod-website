@@ -16,7 +16,17 @@ Follow the folder structure already in place in `content/posts/`. Add all images
 
 When using images use the shortcode `{{< image-resize YOUR-IMAGE.EXT >}}` so that hugo can automatically resize it.
 
+If you want to create a row with three images use `{{< triple-image-thumbnail "YOUR-IMAGE1.EXT" "YOUR-IMAGE2.EXT" "YOUR-IMAGE3.EXT" >}}`. This uses smart fill where it will focus on the main part of the image. If you don't like the outcome then you might want to use the alternative shortcode:
+
+`{{< triple-image-thumbnail-scaled "YOUR-IMAGE1.EXT" "YOUR-IMAGE2.EXT" "YOUR-IMAGE3.EXT" >}}`. This shows the full image but scales it down to fit three in a row.
+
 The site automatically regenerates itself using github actions when a push or merge happens on `master`.
+
+### Adding translations
+
+Check the `config.toml` file that the language has been added. It not then follow the format and add a new language section.
+
+Create translations by copying the post then renaming it to include the language code. For example, in a folder with `index.md` you would create a translation by creating a new file called `index.ru.md` where `ru` is the language code for the translation.
 
 ### Automated Tweeting
 

@@ -59,6 +59,7 @@ body {
         margin: 20px auto;
         display: block;
         height: auto;
+        width: 100%;
     }
 
     .video-container {
@@ -244,4 +245,14 @@ a:hover, a.navbar-item:hover, a.navbar-link:hover {
 
 .translation-link:not(:last-of-type):after {
     content: " / "
+}
+
+.triple-image {
+    .column:not(:first-of-type) {
+        padding-left: 2px;
+    }
+
+    .column:not(:last-of-type) {
+        padding-right: 2px;
+    }
 }

@@ -40,10 +40,7 @@ I managed to make low poly models for all primary and secondary NF infantry weap
   
 I also textured one of the SMG’s so we have something for discussing color schemes.
 
-{{< image-resize NF_SMG_2_red.jpg >}}
-{{< image-resize NF_SMG_2_redbrown.jpg >}}
-{{< image-resize NF_SMG_2_yellow.jpg >}}
-
+{{< triple-image-thumbnail "NF_SMG_2_red.jpg" "NF_SMG_2_redbrown.jpg" "NF_SMG_2_yellow.jpg" >}}
 
 The team favourite is currently a mix between the bright red and the muted brownish version. I also added some surface detail and reduced the shininess that made it look like a plastic toy.
 
