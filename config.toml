@@ -7,3 +7,12 @@ title = "Empires"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[languages]
+  [languages.en]
+    title = "Empires"
+    weight = 1
+  
+  [languages.ru]
+    title = "Empires"
+    weight = 2

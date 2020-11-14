@@ -25,7 +25,7 @@ body {
     height: 834px;
 
     .title {
-        margin-top: 200px;
+        margin-top: 300px;
         font-size: 400%;
         font-weight: 800;
     }
@@ -112,6 +112,7 @@ body {
 
 .latest-news-title {
     margin-bottom: 20px !important;
+    margin-top: 40px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -223,4 +224,20 @@ a:hover, a.navbar-item:hover, a.navbar-link:hover {
     .item, .heading {
         margin-bottom: 10px;
     }
+}
+
+.social-section {
+    margin-top: 60px;
+}
+
+.steam-widget {
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 60px;
+}
+
+.discord-widget {
+    width: 100%;
+    min-height: 400px;
+    margin-bottom: 60px;
 }
