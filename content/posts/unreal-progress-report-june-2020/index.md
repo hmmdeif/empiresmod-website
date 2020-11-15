@@ -146,7 +146,7 @@ _Work in progress Spawn Screen.  Features Spawn Selection, Quick Select class me
 
 
 {{< image-resize engineerconfigure.jpg >}}
-_Work in progress Class Configurator.  Shows each slot and the available items in that slot.  It probably won't look like this when we are done.  _
+_Work in progress Class Configurator.  Shows each slot and the available items in that slot.  It probably won't look like this when we are done._
 
 Just a note: I am not an artist or UI designer.  I’m focusing on functionality right now, so the UI is fairly ugly.  It will get a look and feel pass :)
 

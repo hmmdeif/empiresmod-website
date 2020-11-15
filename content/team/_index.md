@@ -1,139 +1,41 @@
 ---
-title: The Team
+title: About Us
 author: deif
 date: "2020-08-25"
 ---
 
-### Developers
-
-Tama "Bob2" McGlinn - Programmer, Public Relations
-
-"Smithy" - Modeler, Programmer
-
-Jonathan Staats - Programmer
-
-Max "Thexa4" Maton - Programmer
-
-"Sgt. Security" - Scripter
-
-"VulcanStorm" - Modeler, Programmer
-
-"Misfire" - Programmer
-
-### Community Contributors
-
-"D.D.D. Destroyer" - Level Designer
-
-"complete_lamer" - Level Designer
-
-"Terminator" - Level Designer
-
-"Neoony" - Translation
-
-"Flasche" - Translation, Level Designer
-
-"Terminator" - Translation
-
-"Avatarix" - Translation
-
-### Past Team Members / Contributors
-
-Justin "Krenzo" Krenz - Founder/Lead Programmer
-
-Garrett "Kylegar" Fleenor - Lead programmer
-
-"Reef" - Programmer
-
-Donal "Razorbud" O'Leary - Programmer
-
-"Beerdude26" - Lead Programmer
-
-Marek "MOOtant" Sieradzki - Lead Programmer
-
-"Kane[TW]" - Programmer
-
-Joe "Coffeeburrito" Wakefield - Lead Programmer
-
-"Gregarious" - Website
-
-"Devourawr" - GUI designer
-
-"TheCreeper" - Programmer
-
-"Varbles" - Level Designer
-
-"f1r3w4rr10r" - Modeler
-
-"Mash" - Artist
-
-"Megel" - Lead Artist
-
-"Posthumous" - Vehicle behavior tuning
-
-"Duke" - Lead artist
-
-"Damian" - Animator
-
-"Marcin" - Programmer
-
-"Ducky" - GUI Designer
-
-"Empty" - Particle Artist
-
-"Spike" - Scripter
-
-"Candles" - Programmer
-
-Milot "Brutos" Mirdita - Programmer
-
-"ViroMan" - Scripter
-
-"101010" - Level Designer
-
-"ImSpartacus" - Scripter
-
-"Angry" - Sound engineer
-
-"DocRabbit" - Scripter
-
-"CyberKiller" - Programmer
-
-"WealthySoup" - Lead Tester
-
-"Pastori Woland" - Level Designer
-
-"Redskull" - Modeler
-
-"LordDz" - Level Designer
-
-"Z100000M" - Particle artist
-
-"Grizzly" - Level designer
-
-"Doobie" - Level designer
-
-Benjamin ”ArticBlue” Oldenstål - Tester
-
-"arklansman" - Level Designer
-
-"Amnesiac" - Musician
-
-"ScardyBob" - Lead tester, Public Relations
-
-"Drag" - Vehicle behavior tuning
-
-"Dizzyone" - Designer
-
-"FalconX" - Designer
-
-"El Richardo" - Concept artist
-
-"Jephir" - Lead Programmer
-
-Kevin "Keef" Curtis - Level Designer
-
-"Silk" - Level Designer
-
-"Trickster" - Project Leader
-
-"ukgamer" - Web Developer
+We've been around for a long time making Empires. Initially as a sole developer project on the Battlefield 1942 engine it moved across to the Source Engine before becoming a community project. Since then many members have contributed and added their unique marks on the game. Now some of those members are rebuilding the game again in Unreal Engine.
+
+## Current Team
+
+<div class="columns team">
+    <div class="column">
+        <b>Source</b>
+        <ul>
+            <li>Smithy <span class="tag programmer">Programmer</span></li>
+            <li>VulcanStorm <span class="tag ai">AI</span></li>
+            <li>DDDDestroyer <span class="tag mapper">Mapper</span></li>
+            <li>Sgt. Security <span class="tag scripter">Scripter</span></li>
+            <li>Neoony <span class="tag programmer">Programmer</span></li>
+        </ul>
+    </div>
+    <div class="column">
+        <b>Unreal Engine</b>
+        <ul>
+            <li>Roy Awesome <span class="tag programmer">Programmer</span></li>
+            <li>Megafunk <span class="tag programmer">Programmer</span></li>
+            <li>beerdude26 <span class="tag programmer">Programmer</span></li>
+            <li>f1r3w4rr10r <span class="tag modeller">Modeller</span></li>
+            <li>Mayama <span class="tag modeller">Modeller</span></li>
+            <li>KGBEATS <span class="tag sound">Sound</span></li>
+            <li>Yes <span class="tag modeller">Modeller</span></li>
+            <li>thomasfn <span class="tag mapper">Mapper</span></li>
+            <li>Terminator <span class="tag mapper">Mapper</span></li>
+        </ul>
+    </div>
+</div>
+
+## Call for Help
+
+What we really are missing from our UE4 team right now is an **animator** and a **game designer**. If you have experience with animating with the Unreal Engine then please get in touch with one of the
+team in our [Discord](https://discord.gg/UH6Sc6B). Note that we are all volunteers and we work on this project for fun.

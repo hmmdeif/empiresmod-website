@@ -256,3 +256,38 @@ a:hover, a.navbar-item:hover, a.navbar-link:hover {
         padding-right: 2px;
     }
 }
+
+.team {
+    ul {
+        list-style: none;
+        margin-left: 0;
+
+        .tag {
+            margin-left: 5px;
+        }
+
+        .programmer {
+            background-color: hsl(208, 62%, 56%);
+        }
+
+        .ai {
+            background-color: hsl(125, 51%, 39%);
+        }
+
+        .mapper {
+            background-color: hsl(46, 100%, 32%);
+        }
+
+        .modeller {
+            background-color: hsl(0, 58%, 42%);
+        }
+
+        .scripter {
+            background-color: hsl(290, 57%, 42%);
+        }
+
+        .sound {
+            background-color:  hsl(164, 82%, 32%);
+        }
+    }
+}
