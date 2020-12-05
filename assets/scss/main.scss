@@ -165,8 +165,18 @@ body {
         font-weight: normal;
     }
 
+    h3 {
+        font-size: 100%;
+        color: hsl(208, 60%, 52%);
+        font-weight: normal;
+    }
+
     p {
         margin: 20px auto;
+        color: hsl(240, 10%, 75%);
+    }
+
+    li {
         color: hsl(240, 10%, 75%);
     }
 
