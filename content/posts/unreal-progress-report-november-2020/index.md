@@ -42,6 +42,7 @@ November was a banner month for development.  I finished up Teams and Squads aro
   <source src="./squadnames.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video> 
+
 _Creating a squad with a custom name_
 
 For the UE4 port, I decided that hard coding the gamemode into every portion of the game would be a poor way to execute this project.  It took quite a bit of time to design out a technical system that didn’t fall into that trap, but I feel that I have figured out a good method for it.  Empires game modes are now entirely event driven, and both Teams and the Game Mode now listen to events and react to them, and can even send events.  
