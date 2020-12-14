@@ -31,3 +31,7 @@ Create translations by copying the post then renaming it to include the language
 ### Automated Tweeting
 
 A tweet will be automatically sent out if the last git commit message to the master branch has `Tweet: ` anywhere in the message. Anything after that search expression will be posted as a tweet. Include the url if you are linking a blog post (it will be `https://www.empiresmod.com/posts/<name of folder that contains post>`)
+
+### Open Graph Tags
+
+When making a new post, it's worth bearing in mind how sites like Reddit and Discord are going to embed a link. By default it will use the first image in the page, or the image that is called `featured.<ext>`. It will use the `title` and `description` info in the metadata at the top of the post, so fill these in if you don't want the first sentence being used as the description.

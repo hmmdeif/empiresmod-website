@@ -105,7 +105,7 @@ Both Mayama and me are currently chipping away and making character models for b
 
 I have finally managed to finish 2 NF infantry high polys. It's a heavy armored soldier which will be the rifleman model and the less armored and agile scout. Both models still need a low poly, texturing and rigging before they can be put into the game but it is nice to see stuff moving forward. The basic idea behind the armors was that the Northern Faction uses everything they get their hands on to protect themself from the superior firepower that Brenodi forces have. It’s a mix of old industrial gear, metal plates strapped to the body and hidden military gear that was stashed away from the last war.
 
-{{< image-proc NF_heavy_armor_1.png Resize "1100x" >}}
+{{< image-proc featured.png Resize "1100x" >}}
 
 {{< triple-image-thumbnail "heavy_armor_1.png" "heavy_armor_2.png" "heavy_armor_3.png" >}}
 {{< triple-image-thumbnail "heavy_armor_4.png" "heavy_armor_5.png" "heavy_armor_6.png" >}}
